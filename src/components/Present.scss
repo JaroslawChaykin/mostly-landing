@@ -1,0 +1,49 @@
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .title {
+      font-size: 36px;
+      text-align: right;
+      color: $white;
+      .text {
+        font-size: 48px;
+        position: relative;
+        .outlined-text {
+          line-height: 50px;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - 4px);
+            border: 2px solid $blue;
+            border-radius: 10px;
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          background: white;
+          width: 63px;
+          height: 3px;
+          bottom: -23px;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      padding: 85px 100px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

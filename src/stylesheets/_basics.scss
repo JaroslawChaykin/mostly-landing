@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $dark-blue;
 }
 
 html,
@@ -13,75 +14,60 @@ body {
   font-weight: 400;
 }
 
-body {
-  background-color: $dark;
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  font-weight: 400;
-  font-size: 150px;
-  color: $white;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 56px;
-  color: $white;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 48px;
-  color: $white;
+.main {
+  overflow: hidden;
 }
 
 .container {
   width: 100%;
   max-width: 1170px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.holder {
-  padding: 48px 65px;
-  background: $darked;
-  border: 1px solid transparent;
-  border-radius: 50px;
+.screen-container {
+  height: 100vh;
+  max-height: 760px;
   width: 100%;
-  box-shadow: 0px 0px 250px 2px rgba(0, 0, 0, 0.5);
-}
-
-.border-blue {
-  border: 2px solid $blue;
-}
-
-.border-light-blue {
-  border: 2px solid $light-blue;
-}
-
-.border-cloud {
-  border: 2px solid $cloud;
-}
-
-.border-yellow {
-  border: 2px solid $yellow;
-}
-
-.border-white {
-  border: 2px solid $white;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
-  padding: 35px 55px;
-  background: $cloud;
-  border-radius: 10px;
+  width: fit-content;
+  padding: 22px 72px;
   color: $white;
-  font-size: 24px;
+  background: $blue;
+  border: none;
+  border-radius: 50px;
+  font-size: $fs-regular;
+  cursor: pointer;
 }
-.btn-outline {
-  background: transparent;
-  border: 1px solid $cloud;
+
+.btn-dark {
+  background: $dark-blue;
+  color: $white;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.title {
+  font-size: $fs-big;
+  font-weight: 700;
+  color: $blue;
+}
+
+.title-dark {
+  color: $dark-blue;
+}
+
+input {
+  width: 450px;
+  padding: 22px 26px;
+  background: white;
+  border: none;
+  border-radius: 50px;
 }

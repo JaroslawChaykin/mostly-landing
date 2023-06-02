@@ -1,0 +1,41 @@
+.extension-box {
+  display: flex;
+  justify-content: center;
+  background: $blue;
+  border-radius: 15px;
+}
+
+.extension {
+  padding-top: 60px;
+  margin-bottom: 15px;
+
+  .content {
+    margin-top: 155px;
+
+    .extension-text {
+      display: flex;
+      gap: 20px;
+      font-size: 24px;
+
+      .extension-text__title {
+        font-weight: 700;
+        width: 50%;
+      }
+
+      .extension-text__list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 50%;
+      }
+    }
+  }
+  .extension__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 90%;
+    }
+  }
+}

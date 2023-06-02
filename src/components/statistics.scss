@@ -1,0 +1,51 @@
+.statistics-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.statistics {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  &-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 60px;
+
+    .content {
+      margin-top: 110px;
+      margin-right: 100px;
+      font-size: $fs-regular;
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        margin-top: 55px;
+      }
+    }
+  }
+
+  &-image {
+    grid-column-start: 4;
+    grid-column-end: 9;
+
+    .image-background {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      background: $blue;
+      border-radius: 15px;
+      overflow: hidden;
+
+      img {
+
+      }
+    }
+  }
+}

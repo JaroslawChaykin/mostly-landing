@@ -1,0 +1,55 @@
+.our-tasks-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-tasks {
+  margin-top: 60px;
+
+  .grid-tasks {
+    margin-top: 155px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    .task {
+      height: 200px;
+      background: $dark-blue;
+      border-radius: 15px;
+      padding: 30px;
+      font-size: $fs-regular;
+    }
+
+    .task-1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .task-2 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+    .task-3 {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .task-4 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .task-5 {
+      grid-column-start: 4;
+      grid-column-end: 4;
+    }
+
+    .dark-color {
+      color: $white;
+    }
+
+    .light-color {
+      background: $blue;
+    }
+  }
+}

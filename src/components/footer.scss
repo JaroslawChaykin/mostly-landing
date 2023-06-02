@@ -1,0 +1,46 @@
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $blue;
+  border-radius: 15px 15px 0 0;
+
+  .footer-wave {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      background: $dark-blue;
+
+      &-text {
+        display: flex;
+        justify-content: space-between;
+        font-size: $fs-small;
+
+        .left {
+          color: $white;
+        }
+
+        .right {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  .form {
+    padding-top: 40px;
+    display: flex;
+    gap: 55px;
+  }
+}
